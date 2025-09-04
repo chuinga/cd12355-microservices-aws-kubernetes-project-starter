@@ -1,5 +1,5 @@
-# Use Python 3.9 slim image as base
-FROM python:3.9-slim
+# Use Python 3.9 slim image from ECR Public to avoid Docker Hub rate limits
+FROM public.ecr.aws/docker/library/python:3.9-slim
 
 # Set working directory in the container
 WORKDIR /app
