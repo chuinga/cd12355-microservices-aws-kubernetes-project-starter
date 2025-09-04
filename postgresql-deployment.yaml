@@ -26,8 +26,14 @@ spec:
         volumeMounts:
         - mountPath: /var/lib/postgresql/data
           name: postgresql-storage
+        - mountPath: /analytics
+          name: analytics-code
       volumes:
       - name: postgresql-storage
         persistentVolumeClaim:
           claimName: postgresql-pvc
+      - name: analytics-code
+        hostPath:
+          path: /mnt/data/analytics
+          type: DirectoryOrCreate
           
