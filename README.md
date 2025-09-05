@@ -27,3 +27,23 @@ For this analytics application, **t3.medium** instances would be optimal for pro
 - `GET /health_check`: Application health status
 - `GET /api/reports/daily_usage`: Daily check-in analytics  
 - `GET /api/reports/user_visits`: User visit patterns
+
+## Screenshots
+
+### Issue #1: CodeBuild Automatic Trigger
+![CodeBuild triggered by Github](image-resources/codebuild-initiator.png)  
+*Screenshot showing the CodeBuild project initiator as GitHub*
+
+![CodeBuild Webhook Configuration](image-resources/codebuild-webhook-config.png)  
+*Screenshot displaying the CodeBuild project configured with a GitHub webhook to automatically trigger builds upon code commits*
+
+
+### Issue #2: All Pods Running
+![Kubectl Get Pods - All Running](image-resources/kubectl-get-pods-running.png)  
+*Screenshot of `kubectl get pods` showing all pods in RUNNING status (no PENDING pods)*
+
+
+### Issue #3: Application Logs in CloudWatch
+![CloudWatch Application Logs](image-resources/cloudwatch-application-logs.png)  
+*Screenshot of CloudWatch Container Insights showing periodic application logs with health status data*
+

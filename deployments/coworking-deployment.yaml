@@ -44,13 +44,6 @@ spec:
             port: 5153
           initialDelaySeconds: 5
           timeoutSeconds: 5
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "100m"
-          limits:
-            memory: "256Mi"
-            cpu: "200m"
         envFrom:
         - configMapRef:
             name: coworking-configmap
